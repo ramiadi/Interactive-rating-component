@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+img {
+  object-fit: cover;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1em;
+  margin: 1em;
+}
+
+.box p,
+.thank-you-box p {
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.box img {
+  width: 2em;
+  padding: 0.5em;
+  border-radius: 50px;
+  background-color: hsl(217, 12%, 63%);
+}
+
+.buttons-element {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.buttons-element button {
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons-element button:hover {
+  background-color: hsl(217, 12%, 53%);
+}
+
+/* Submit button */
+#submit {
+  border: none;
+  padding: 0.5em 1em;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* When one of the buttons is clicked, it gets activated */
+.active {
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+
+/*  */
+button.selected {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.buttons-element button.selected:hover {
+  background-color: hsl(25, 97%, 43%);
+}
+
+/* Displays when clickicn on the submit button */
+.thank-you-box {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.thank-you-box img {
+  width: 10em;
+}
+
+.selection {
+  color: hsl(25, 97%, 53%);
+}
