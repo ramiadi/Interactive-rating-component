@@ -28,20 +28,27 @@ main {
   flex-direction: column;
   gap: 1em;
   background-color: hsl(213, 19%, 18%);
-  padding: 1em;
+  padding: 2em;
   margin: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box h1 {
+  color: hsl(0, 0%, 100%);
 }
 
 .box p,
 .thank-you-box p {
   font-size: 1.1rem;
+  color: hsl(0, 0%, 100%);
   word-wrap: break-word;
   max-width: 500px;
   line-height: 1.5;
 }
 
 .box img {
-  width: 2em;
+  width: 2.2em;
   padding: 0.5em;
   border-radius: 50px;
   background-color: hsl(217, 12%, 63%);
@@ -96,15 +103,25 @@ button.selected {
 
 /* Displays when clickicn on the submit button */
 .thank-you-box {
-  display: none;
+  display: none; /* Initially hidden */
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  background-color: hsl(213, 19%, 18%);
+  color: white;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .thank-you-box img {
   width: 10em;
 }
 
 .selection {
-  color: hsl(25, 97%, 53%);
+  color: hsl(25, 97%, 53%) !important;
+  background-color: hsl(217, 12%, 53%);
+  padding: 0.25em 0.5em;
+  border-radius: 50px;
 }
