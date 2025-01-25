@@ -14,7 +14,9 @@ document.addEventListener("click", (event) => {
   enableOrDisableSubmit(event);
 });
 
+// This function will enable or disable the submit button
 function enableOrDisableSubmit(event) {
+  // Check if the target is a button and if the button id starts with btn
   if (event.target.tagName === "BUTTON" && event.target.id.startsWith("btn")) {
     submit.disabled = false;
     submit.classList.add("active");
